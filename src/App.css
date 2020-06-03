@@ -39,6 +39,12 @@ header nav a.active {
     border-bottom: none;
 }
 
+.splash {
+    text-align: center;
+    color: hotpink;
+    background-color: white;
+}
+
 
 
 

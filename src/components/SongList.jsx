@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 const SongList = ({ songs }) => {
@@ -11,7 +12,7 @@ const SongList = ({ songs }) => {
             <div>
                 {filteredList.map(song => (
                     <div key={song.title + song.artist}>
-                        {song.title} by {song.artist} ({song.date})
+                        <Link to={'/song/'+song.id}>{song.title} by {song.artist} ({song.date})</Link>
                     </div>
                 ))}
             </div>
